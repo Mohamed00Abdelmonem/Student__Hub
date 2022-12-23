@@ -1,0 +1,51 @@
+{% extends 'student/base_nav.html' %}
+{% load static %}
+{% block content %}
+
+<br> <br>
+<div class="container">
+
+<center>
+
+    <video width="900" height="400" controls >
+    <source src="{{ lesson.video.url }}">
+    </video>
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="row row-cols-1 row-cols-md-3">
+
+
+  <div class="col mb-4">
+    <div class="card" style="width: 20rem;" >
+
+        <br>
+        <br>
+        <br>
+        <br>
+      <div class="card-body">
+        <h3 class="card-title">{{ lesson.name_lesson}}</h3>
+          <br>
+          <br>
+          <br>
+        <h5 class="card-text">{{ lesson.description}}</h5>
+<!--        <p class="card-text"> <mark style="background-color: green; color: white;">{{ Electronic.price}} L.E </mark> </p>-->
+      </div>
+    </div>
+  </div>
+
+        </center>
+
+
+
+<!--     <p>No video Available</p>-->
+
+  </div>
+  </div>
+
+{% endblock  %}
